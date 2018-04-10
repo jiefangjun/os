@@ -66,10 +66,6 @@ int main()
 	
 	double startTime; //开始时间
 	double endTime; //结束时间 
-	
-	int cpu; //代表cpu的指针，来遍历作业队列 
-	
-	
 	struct Job job[n];
 	
 	//初始化作业状态 
@@ -95,8 +91,6 @@ int main()
 
 		//每个工作的结束时间 
 		endTime += startTime + job[i].serverTime;
-
-		cpu = i;
 		process(endTime, &job[i]);
 		outStatus(n, job);
 		//调度结束
