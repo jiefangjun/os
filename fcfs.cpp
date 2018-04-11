@@ -45,7 +45,7 @@ void process(double endTime, Job *job)
 	//改变运行状态 
 	job->status = 'R';
 	cout<<"周转时间"<<endTime - job->arriveTime<<" ";
-	cout<<"带权周转时间"<<job->serverTime / (endTime - job->arriveTime)<<endl;
+	cout<<"带权周转时间"<< (endTime - job->arriveTime) / job->serverTime <<endl;
 	
 }
 
