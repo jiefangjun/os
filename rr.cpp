@@ -37,7 +37,7 @@ void remove(int *n)
 // 调度处理函数 *pa代表数组首地址
 void proce(int *n, double size, double *endTime, Process *pa, Process *p)
 {
-	cout<<"当前处理"<<p->name<<" ";
+	cout<<"当前处理"<<p->name<<endl;
 		
 	// 运行状态
 	p->status = 'R';
@@ -126,7 +126,6 @@ int main()
 			proce(&n, s, &endTime, p, head);
 		}
 		head = head->next;
-
 	}
 
 	// 运行结束状态
