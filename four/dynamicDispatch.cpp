@@ -157,7 +157,8 @@ int main()
 			// 处理过当前进程后排序
 			sortedP(num, p);
 		}
-		head = head->next;
+		// head指针重新指向队尾
+		head = p;
 	}
 
 	// 运行结束状态
